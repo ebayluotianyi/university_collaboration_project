@@ -21,7 +21,7 @@ purchased_end_ebay_100000_20171130_vectors_nobin (too big to upload)
 <p>
 output: purchased_end_tensorflow_train_sample_100000_20171130_newid.csv (too big to upload)
 
-4.lstm_old_model_tensorflow.py: graph lstm model training
+4.lstm_old_model_tensorflow.py: graph lstm model training and testing
 <p>
 input: 
 purchased_end_tensorflow_train_sample_100000_20171130_newid.csv (too big to upload)

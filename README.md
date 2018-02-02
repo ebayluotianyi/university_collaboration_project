@@ -1,5 +1,4 @@
 # university_collaboration_project
-Old model:
 1.extract_words_to_train_word_embedding.py: get the word line by line to train the word2vec
 input:
 eBay_event_file_20170816_10000.csv #8.6GB (too big to upload). It contains 100,000 sequences of users behaviors events.

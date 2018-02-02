@@ -1,9 +1,19 @@
 # university_collaboration_project
+<p>
 1.extract_words_to_train_word_embedding.py: get the word line by line to train the word2vec
+</p>
+<p>
 input:
+</p>
+<p>
 eBay_event_file_20170816_10000.csv #8.6GB (too big to upload). It contains 100,000 sequences of users behaviors events.
+</p>
+<p>
 output:
+</p>
+<p>
 purchased_end_ebay_words_to_train_word2vector
+</p>
 
 2.train the word embedding with mikolov word2vec's c code:
 input: purchased_end_ebay_words_to_train_word2vector (too big to upload)

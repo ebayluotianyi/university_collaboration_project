@@ -4,7 +4,6 @@ input:
 eBay_event_file_20170816_10000.csv #8.6GB (too big to upload). It contains 100,000 sequences of users behaviors events.
 <p>
 output:
-</p>
 purchased_end_ebay_words_to_train_word2vector
 
 2.train the word embedding with mikolov word2vec's c code:

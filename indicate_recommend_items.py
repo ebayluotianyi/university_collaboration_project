@@ -372,7 +372,11 @@ if os.path.isfile(new_file):
 file_write_new_file = open(new_file, 'w')
 
 attention_userplusad_file = "ebay_linenum_2_title_file_addtocart_end"
+temp_line_num = -1
 for line_new in open(attention_userplusad_file, 'r'):
+    temp_line_num += 1
+    if temp_line_num > 2000:
+        break
     one_line_new_str = line_new.split("|||")
     temp_user_id = one_line_new_str[0]
     if temp_user_id in has_is_list:
@@ -385,6 +389,8 @@ file_write_new_rec_file = open(new_rec_file, 'w')
 current_line_num = -1
 for next_line_new in open(attention_userplusad_file, 'r'):
     current_line_num += 1
+    if temp_line_num > 2000:
+        break
     one_line_new_str = next_line_new.split("|||")
     two_line_new_str = one_line_new_str[1].split(" ")
     temp_user_id = one_line_new_str[0]

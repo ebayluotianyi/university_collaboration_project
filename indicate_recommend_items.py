@@ -389,7 +389,7 @@ file_write_new_rec_file = open(new_rec_file, 'w')
 current_line_num = -1
 for next_line_new in open(attention_userplusad_file, 'r'):
     current_line_num += 1
-    if temp_line_num > 2000:
+    if current_line_num > 2000:
         break
     one_line_new_str = next_line_new.split("|||")
     two_line_new_str = one_line_new_str[1].split(" ")

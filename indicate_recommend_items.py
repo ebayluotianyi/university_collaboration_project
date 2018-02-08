@@ -138,11 +138,25 @@ for line_original in open(attention_userplusad_file, 'r'):
             if len(relevant_list) > 0:
                 pass
             if len(view_event_words_list) == 0 or final_initial_view == view_event_index_list[0] or final_initial_view == view_event_index_list[len(view_event_words_list) - 2]:
-                relevant_list.append(final_initial_view)
+                if len(view_event_words_list) == 0:
+                    pass
+                else:
+                    if final_initial_view == view_event_index_list[0]:
+                        relevant_list.append(final_initial_view)
+                        relevant_list.append(view_event_index_list[len(view_event_words_list) - 1])
+                    if final_initial_view == view_event_index_list[len(view_event_words_list) - 2]:
+                        relevant_list.append(final_initial_view)
+                        relevant_list.append(view_event_index_list[0])
             elif len(search_event_words_list) == 0 or final_initial_search == search_event_index_list[0] or final_initial_search == search_event_index_list[len(search_event_words_list) - 2]:
-                relevant_list.append(final_initial_search)
-                relevant_list.append(final_initial_view)
-                relevant_list.append(view_event_index_list[len(view_event_index_list) - 1])
+                if len(search_event_words_list) == 0:
+                    pass
+                else:
+                    if final_initial_search == search_event_index_list[0]:
+                        relevant_list.append(final_initial_search)
+                        relevant_list.append(search_event_index_list[len(search_event_index_list) - 1])
+                    if final_initial_search == search_event_index_list[len(search_event_words_list) - 2]:
+                        relevant_list.append(final_initial_search)
+                        relevant_list.append(search_event_index_list[0])
             else:
                 relevant_list.append(final_initial_search)
                 relevant_list.append(search_event_index_list[len(search_event_index_list) - 1])
@@ -250,14 +264,29 @@ for line_original in open(attention_userplusad_file, 'r'):
             relevant_list = []
 
             if len(view_event_words_list) == 0 or final_initial_view == view_event_index_list[0] or final_initial_view == view_event_index_list[len(view_event_words_list) - 2]:
-                relevant_list.append(final_initial_view)
+                if len(view_event_words_list) == 0:
+                    pass
+                else:
+                    if final_initial_view == view_event_index_list[0]:
+                        relevant_list.append(final_initial_view)
+                        relevant_list.append(view_event_index_list[len(view_event_words_list) - 1])
+                    if final_initial_view == view_event_index_list[len(view_event_words_list) - 2]:
+                        relevant_list.append(final_initial_view)
+                        relevant_list.append(view_event_index_list[0])
             elif len(search_event_words_list) == 0 or final_initial_search == search_event_index_list[0] or final_initial_search == search_event_index_list[len(search_event_words_list) - 2]:
-                relevant_list.append(final_initial_search)
-                relevant_list.append(final_initial_view)
-                relevant_list.append(view_event_index_list[len(view_event_index_list) - 1])
+                if len(search_event_words_list) == 0:
+                    pass
+                else:
+                    if final_initial_search == search_event_index_list[0]:
+                        relevant_list.append(final_initial_search)
+                        relevant_list.append(search_event_index_list[len(search_event_index_list) - 1])
+                    if final_initial_search == search_event_index_list[len(search_event_words_list) - 2]:
+                        relevant_list.append(final_initial_search)
+                        relevant_list.append(search_event_index_list[0])
             else:
                 relevant_list.append(final_initial_search)
                 relevant_list.append(search_event_index_list[len(search_event_index_list) - 1])
+                
             if len(relevant_list) > 0:
                 pass 
             for index_temp in range(current_num_display_ad):
@@ -333,11 +362,25 @@ if current_num_display_ad != 0:
 
     relevant_list = []
     if len(view_event_words_list) == 0 or final_initial_view == view_event_index_list[0] or final_initial_view == view_event_index_list[len(view_event_words_list) - 2]:
-        relevant_list.append(final_initial_view)
+        if len(view_event_words_list) == 0:
+            pass
+        else:
+            if final_initial_view == view_event_index_list[0]:
+                relevant_list.append(final_initial_view)
+                relevant_list.append(view_event_index_list[len(view_event_words_list) - 1])
+            if final_initial_view == view_event_index_list[len(view_event_words_list) - 2]:
+                relevant_list.append(final_initial_view)
+                relevant_list.append(view_event_index_list[0])
     elif len(search_event_words_list) == 0 or final_initial_search == search_event_index_list[0] or final_initial_search == search_event_index_list[len(search_event_words_list) - 2]:
-        relevant_list.append(final_initial_search)
-        relevant_list.append(final_initial_view)
-        relevant_list.append(view_event_index_list[len(view_event_index_list) - 1])
+        if len(search_event_words_list) == 0:
+            pass
+        else:
+            if final_initial_search == search_event_index_list[0]:
+                relevant_list.append(final_initial_search)
+                relevant_list.append(search_event_index_list[len(search_event_index_list) - 1])
+            if final_initial_search == search_event_index_list[len(search_event_words_list) - 2]:
+                relevant_list.append(final_initial_search)
+                relevant_list.append(search_event_index_list[0])
     else:
         relevant_list.append(final_initial_search)
         relevant_list.append(search_event_index_list[len(search_event_index_list) - 1])

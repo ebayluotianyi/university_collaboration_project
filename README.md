@@ -1,5 +1,5 @@
 # university_collaboration_project
-I modified the sourcecode of chain LSTM model in the tensorflow and developed a new graph-lstm model.
+I modified the sourcecode of chain LSTM model in the tensorflow and developed a new graph-lstm model. The following is the training process.
 
 1.extract_words_to_train_word_embedding.py: get the word line by line to train the word2vec
 <p>

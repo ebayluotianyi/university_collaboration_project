@@ -28,3 +28,9 @@ purchased_end_tensorflow_train_sample_100000_20171130_newid.csv (too big to uplo
 <p>
 output:
 model.ckpt
+  
+5. "threshold_0.9_contain_all_events.csv" is the file which contains the sequences of users behavior events including "add_to_cart" event.
+<p>
+The format of "threshold_0.9_contain_all_events.csv" is “[userid]|||[page type] [Device] [title words for view page or searched keywords for search papge]” (One example: "449|||SEARCH Mobile tokyo disney". It means user 449 search the "tokyo disney" in his or her mobile device.).
+<p>
+"threshold_0.9_contain_just_recommend_events.csv" is the file which contains events which filter the irrelevant search or view events. The format is the same as the "threshold_0.9_contain_all_events.csv".

@@ -1,4 +1,6 @@
 # university_collaboration_project
+I modified the sourcecode of chain LSTM model in the tensorflow and developed a new graph-lstm model.
+
 1.extract_words_to_train_word_embedding.py: get the word line by line to train the word2vec
 <p>
 input:
@@ -29,7 +31,8 @@ purchased_end_tensorflow_train_sample_100000_20171130_newid.csv (too big to uplo
 output:
 model.ckpt
   
-5. "threshold_0.9_contain_all_events.csv" is the file which contains the sequences of users behavior events including "add_to_cart" event.
+5. indicate_recommend_items.py: Filter irrelevant search or view events and leave the relevant ones to make users purchase more things.
+"threshold_0.9_contain_all_events.csv" is the file which contains the sequences of users behavior events including "add_to_cart" event.
 <p>
 The format of "threshold_0.9_contain_all_events.csv" is “[userid]|||[page type] [Device] [title words for view page or searched keywords for search papge]” (One example: "449|||SEARCH Mobile tokyo disney". It means user 449 search the "tokyo disney" in his or her mobile device.).
 <p>
